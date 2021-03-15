@@ -226,7 +226,7 @@ const invert = (chord) => {
   return inverted;
 }
 
-let fsm = stack(440, et5).map(triangle);
+let fsm = [220, 440, 660, 880].map(sine);
 fsm = mul(add(...fsm), 0.2);
 
 // let thing = add(sine(440), sine(perfectFifth(440)));
